@@ -15,7 +15,7 @@ export const Statistics = ({ title, stats }) => (
       {/*зазначаємо що якщо немає title то не виводимо його*/}
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statList}>
-        {/*перебираємо масив для створення списку елементів*/}
+        {/*перебираємо масив для створення списку елементів і якщо у нас картка без заголовка то приміняємо стилі statListItemNoTitle*/}
         {stats.map(stat => (
           <li
             className={title ? css.statListItem : css.statListItemNoTitle}

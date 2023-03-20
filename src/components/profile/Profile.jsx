@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
+//створюємо компонент Profile
 export const Profile = ({ avatar, username, tag, location, stats }) => (
   <div className={css.profile}>
     <div className={css.description}>
@@ -27,6 +28,7 @@ export const Profile = ({ avatar, username, tag, location, stats }) => (
   </div>
 );
 
+//зазначаємо типи пропсів
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
